@@ -1,1 +1,1 @@
-# FalaLD
+"Fiz esse projeto com o intuito de praticar minhas habilidades com HTML, CSS, Bootstrap, JavaScript e principalmente PHP, pois usei o PHP como linguagem back-end para enviar dados para um banco de dados e recuperá-lo. Nesse arquivo, eu coloquei somente 3 páginas onde, em cada uma, você pode avaliar com comentário e usar estrelas também. A página retorna o comentário, as estrelas e a média das estrelas que foram dadas nas avaliações." 
