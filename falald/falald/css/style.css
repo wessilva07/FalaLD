@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 15px;
+}
+
+header {
+  background: #fff url("../imagens/fundo.png") repeat-x;
+}
+
+/* Estilizando a lista em cascata */
+#nav-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilizando a lista em cascata */
+#nav-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-principal li {
+  position: relative;
+}
+
+#nav-principal li::before {
+  position: absolute;
+  left: -20px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para os itens da lista */
+#nav-principal li > ul {
+  display: none;
+  background-color: #2980b9; /* Azul */
+  position: absolute;
+  top: 30px; /* Ajuste a posição vertical conforme necessário */
+  left: 0;
+  min-width: 150px;
+  z-index: 1; /* Para ficar sobre o conteúdo da página */
+}
+
+#nav-principal li:hover > ul {
+  display: block;
+}
+
+#nav-principal li ul li {
+  border: 1px solid #3498db; /* Azul mais claro */
+  width: 100%;
+}
+
+#nav-principal li ul li a {
+  display: block;
+  padding: 5px 10px;
+  color: #f5f5f5; /* Branco */
+  text-decoration: none;
+}
+
+#nav-principal li ul li a:hover {
+  background: #3498db; /* Azul mais claro */
+  color: #fff; /* Branco */
+  text-shadow: 0px 0px 5px #fff;
+}
+
+#nav-principal ul ul.active-submenu {
+  display: block;
+}
+
+/* Esconder menu lateral "Outros comercios" inicialmente */
+#nav-outros-comercios {
+  display: none;
+}
+
+/* Exibir menu lateral quando a classe "active" estiver presente */
+#nav-outros-comercios.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+/* Estilos CSS para a caixa de comentários */
+.comment-box {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.avaliacao img {
+  width: 30px; /* Tamanho das imagens de estrelas */
+  height: 30px;
+  cursor: pointer;
+}
+
+.avaliacao input[type="radio"] {
+  display: none; /* Esconder os inputs de radio */
+}
+
+/* Estilo das estrelas vazias */
+.avaliacao img[src="..imagens/estrela-vazia.png"] {
+  content: url("..imagens/estrela-vazia.png");
+}
+
+/* Estilo das estrelas preenchidas */
+.avaliacao
+  input[type="radio"]:checked
+  ~ label
+  img[src="..imagens/estrela-vazia.png"] {
+  content: url("..imagens/estrela.png");
+}
+
+/* style.css */
+.estrela {
+  width: 20px; /* Altere o valor para o tamanho desejado em pixels */
+}
+
+.media-avaliacoes {
+  font-size: 20px;
+}
+
+.media-avaliacoes img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 6px;
+  margin-left: 3px;
+}
+
+footer a{
+  color: white;
+}
